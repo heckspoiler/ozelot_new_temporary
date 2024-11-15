@@ -1,11 +1,15 @@
 import React from 'react';
-
 import styles from './LandingTitle.module.css';
 
-export default function LandingTitle() {
+import LandingTitleSvg from './LandingTitleSvg/LandingTitleSvg';
+
+const LandingTitle = () => {
   return (
     <div className={styles.titleContainer}>
-      <h1>OZELOT STUDIOS</h1>
+      <LandingTitleSvg />
+      <div className={styles.block}></div>
     </div>
   );
-}
+};
+
+export default LandingTitle;

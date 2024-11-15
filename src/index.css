@@ -3,8 +3,13 @@
   src: url("./fonts/Neuvetica-Bold.woff");
 }
 
+@font-face {
+  font-family: "Nohemi Bold";
+  src: url("./fonts/Nohemi-Bold.woff2");
+}
+
 :root {
-  --title-font: "Neuvetica Bold";
+  --title-font: "Nohemi Bold";
 }
 
 * {
@@ -17,7 +22,6 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   background-color: transparent;
-
 }
 
 
@@ -25,5 +29,5 @@ h1 {
   font-family: var(--title-font);
   font-size: 10rem;
   text-transform: uppercase;
-  color: white;
+
 }
