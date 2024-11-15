@@ -16,6 +16,7 @@
 body {
   min-height: 100vh;
   min-width: 100vw;
+  background-color: transparent;
 
 }
 
@@ -24,4 +25,5 @@ h1 {
   font-family: var(--title-font);
   font-size: 10rem;
   text-transform: uppercase;
+  color: white;
 }

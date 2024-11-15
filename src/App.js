@@ -1,4 +1,6 @@
 import './App.css';
+import BlurOverlay from './components/blurOverlay/BlurOverlay';
+import LandingTitle from './components/landingTitle/LandingTitle';
 
 import Scene from './components/scene/Scene';
 
@@ -6,10 +8,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header"></header>
-      <body>
+      <section className="main">
+        <LandingTitle />
         <Scene />
-        <h1>OZELOT STUDIOS</h1>
-      </body>
+        <BlurOverlay />
+      </section>
     </div>
   );
 }

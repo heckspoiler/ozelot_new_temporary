@@ -1,0 +1,5 @@
+.titleContainer {
+    width: fit-content;
+    z-index: 3;
+    position: absolute;
+}
