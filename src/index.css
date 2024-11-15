@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Neuvetica Bold";
+  src: url("./fonts/Neuvetica-Bold.woff");
+}
+
+:root {
+  --title-font: "Neuvetica Bold";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+
+}
+
+
+h1 {
+  font-family: var(--title-font);
+  font-size: 10rem;
+  text-transform: uppercase;
+}
