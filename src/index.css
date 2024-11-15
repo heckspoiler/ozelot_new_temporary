@@ -10,12 +10,14 @@
 
 :root {
   --title-font: "Nohemi Bold";
+  --black: rgb(35, 35, 35);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--black);
 }
 
 body {
