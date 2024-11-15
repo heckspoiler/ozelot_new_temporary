@@ -1,0 +1,23 @@
+.informationContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    gap: 1rem;
+    max-width: 100vw;
+    pointer-events: none;
+}
+
+.informationContainer * {
+
+    pointer-events: none;
+}
+
+.information {
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    padding: 1rem;
+    width: 25rem;
+}
+
+.information h2 {
+    font-family: var(--title-font);
+}

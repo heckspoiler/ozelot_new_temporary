@@ -8,8 +8,14 @@
   src: url("./fonts/Nohemi-Bold.woff2");
 }
 
+@font-face {
+  font-family: "Nohemi Regular";
+  src: url("./fonts/Nohemi-Regular.woff2");
+}
+
 :root {
   --title-font: "Nohemi Bold";
+  --text-font: "Nohemi Regular";
   --black: rgb(35, 35, 35);
 }
 
@@ -26,10 +32,28 @@ body {
   background-color: transparent;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--title-font);
+
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+p,
+a,
+li,
+ul {
+  font-family: var(--text-font);
+}
 
 h1 {
-  font-family: var(--title-font);
   font-size: 10rem;
   text-transform: uppercase;
-
 }

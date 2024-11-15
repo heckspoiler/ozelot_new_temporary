@@ -1,6 +1,7 @@
 import styles from './App.module.css';
 import BlurOverlay from './components/blurOverlay/BlurOverlay';
 import LandingTitle from './components/LandingTitle/LandingTitle';
+import MiddleInformation from './components/MiddleInformation/MiddleInformation';
 
 import Scene from './components/scene/Scene';
 
@@ -12,6 +13,7 @@ function App() {
       <BlurOverlay />
       <section className={styles.main}>
         <LandingTitle />
+        <MiddleInformation />
       </section>
     </div>
   );
