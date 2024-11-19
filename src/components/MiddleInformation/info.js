@@ -1,13 +1,15 @@
 export const information = [
   {
-    title: 'Brand Strategy',
+    title: 'Forward Thinking',
     description:
       'Creating distinctive visual identities and brand experiences that resonate with target audiences.',
     stats: '150+ brands launched',
     services: ['Logo Design', 'Visual Identity', 'Brand Guidelines'],
+    lottieLink:
+      'https://lottie.host/6cbba8bf-8aba-4b0d-b71f-44a839344207/vZgOJREqZO.json',
   },
   {
-    title: 'Digital Design',
+    title: 'Interdisciplinary',
     description:
       'Crafting intuitive digital experiences through modern web and application design.',
     stats: '200+ websites delivered',

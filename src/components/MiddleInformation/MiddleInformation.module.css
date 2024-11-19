@@ -1,23 +1,32 @@
 .informationContainer {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    max-width: 100vw;
+    width: 100vw;
     pointer-events: none;
+    align-items: center;
+    padding: 2rem 4rem;
 }
 
-.informationContainer * {
-
-    pointer-events: none;
-}
+.informationContainer * {}
 
 .information {
     border: 1px solid var(--black);
     border-radius: 20px;
     padding: 1rem;
-    width: 25rem;
+    width: 100%;
+    height: calc(15rem + 8vw);
+    width: calc(15rem + 8vw);
+
+}
+
+.information:hover {
+    background-color: white;
+
 }
 
 .information h2 {
     font-family: var(--title-font);
 }
+
+.lottieContainer {}

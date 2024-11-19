@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { useFrame, useThree, useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { MeshStandardMaterial } from 'three';
+import { Clock, MeshStandardMaterial } from 'three';
 import asset from '../../../asset/logo.glb';
 
 export default function Model() {
@@ -11,11 +11,11 @@ export default function Model() {
 
   const transparentMaterial = new MeshStandardMaterial({
     metalness: 1.0,
-    roughness: 0.1,
+    roughness: 0.8,
     transparent: true,
-    opacity: 0.8,
+    opacity: 0.3,
     clearcoat: 1.0,
-    clearcoatRoughness: 0.8,
+    clearcoatRoughness: 0.2,
     reflectivity: 1.0,
   });
 
@@ -27,15 +27,21 @@ export default function Model() {
     });
   }, []);
 
-  useFrame(({ mouse }) => {
-    const x = (mouse.x * viewport.width) / 2;
-    const y = (mouse.y * viewport.height) / 2;
-    ref.current.position.set(x, y, 0);
+  const clock = new Clock();
+
+  useFrame(({ clock }) => {
+    ref.current.rotation.y = clock.getElapsedTime();
   });
+
+  // useFrame(({ mouse }) => {
+  //   // const x = (mouse.x * viewport.width) / 2;
+  //   // const y = (mouse.y * viewport.height) / 2;
+  //   ref.current.rotation.set(0, 0, 0);
+  // });
 
   return (
     <mesh ref={ref} castShadow>
-      <primitive object={gltf.scene} scale={1} rotation={[4.5, 0, 0]} />
+      <primitive object={gltf.scene} scale={2.5} rotation={[4.8, 0, 0]} />
     </mesh>
   );
 }
