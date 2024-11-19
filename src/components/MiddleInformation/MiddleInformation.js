@@ -16,7 +16,7 @@ export default function MiddleInformation({ hoveredItem, setHoveredItem }) {
     lottieRefs.current.forEach((ref) => {
       if (ref) {
         ref.setPlayerDirection(isHovered ? 1 : -1);
-        ref.setPlayerSpeed(isHovered ? 2 : 5);
+        ref.setPlayerSpeed(isHovered ? 3 : 2);
         ref.play();
       }
     });

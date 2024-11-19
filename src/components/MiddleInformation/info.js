@@ -1,14 +1,16 @@
 export const information = [
   {
+    id: 1,
     title: 'Forward Thinking',
     description:
       'Creating distinctive visual identities and brand experiences that resonate with target audiences.',
     stats: '150+ brands launched',
     services: ['Logo Design', 'Visual Identity', 'Brand Guidelines'],
     lottieLink:
-      'https://lottie.host/6cbba8bf-8aba-4b0d-b71f-44a839344207/vZgOJREqZO.json',
+      'https://lottie.host/c2f11e8e-7107-45e6-9a29-676284825cad/0YhITbtUgS.json',
   },
   {
+    id: 2,
     title: 'Interdisciplinary',
     description:
       'Crafting intuitive digital experiences through modern web and application design.',
@@ -16,6 +18,7 @@ export const information = [
     services: ['UI/UX Design', 'Web Development', 'Mobile Apps'],
   },
   {
+    id: 3,
     title: 'Print & Packaging',
     description:
       'Delivering impactful print materials and packaging solutions that stand out on shelves.',
@@ -23,6 +26,7 @@ export const information = [
     services: ['Packaging Design', 'Marketing Materials', 'Editorial Design'],
   },
   {
+    id: 4,
     title: 'Motion Design',
     description:
       'Bringing brands to life through animation and dynamic visual storytelling.',
