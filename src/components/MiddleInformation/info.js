@@ -11,7 +11,7 @@ export const information = [
   },
   {
     id: 2,
-    title: 'Interdisciplinary',
+    title: 'Transdisciplinary',
     description:
       'Crafting intuitive digital experiences through modern web and application design.',
     stats: '200+ websites delivered',
