@@ -30,7 +30,7 @@ export default function Model() {
   const clock = new Clock();
 
   useFrame(({ clock }) => {
-    ref.current.rotation.y = clock.getElapsedTime();
+    ref.current.rotation.y = clock.getElapsedTime() / 10;
   });
 
   // useFrame(({ mouse }) => {
@@ -41,7 +41,7 @@ export default function Model() {
 
   return (
     <mesh ref={ref} castShadow>
-      <primitive object={gltf.scene} scale={2.5} rotation={[4.8, 0, 0]} />
+      <primitive object={gltf.scene} scale={5} rotation={[4.8, 0, 0]} />
     </mesh>
   );
 }
