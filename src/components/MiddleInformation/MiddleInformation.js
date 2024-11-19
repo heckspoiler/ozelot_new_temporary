@@ -4,8 +4,7 @@ import { Player as Lottieplayer } from '@lottiefiles/react-lottie-player';
 import { information } from './info';
 
 export default function MiddleInformation({ hoveredItem, setHoveredItem }) {
-  const [isHovered, setIsHovered] = useState(false);
-  const [speed, setSpeed] = useState(1);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
   const lottieRefs = useRef([]);
 
   useEffect(() => {
@@ -13,23 +12,32 @@ export default function MiddleInformation({ hoveredItem, setHoveredItem }) {
   }, []);
 
   useEffect(() => {
-    lottieRefs.current.forEach((ref) => {
-      if (ref) {
-        ref.setPlayerDirection(isHovered ? 1 : -1);
-        ref.setPlayerSpeed(isHovered ? 3 : 2);
-        ref.play();
-      }
-    });
-  }, [isHovered]);
+    if (hoveredIndex !== null && lottieRefs.current[hoveredIndex]) {
+      const ref = lottieRefs.current[hoveredIndex];
+      ref.setPlayerDirection(1);
+      ref.setPlayerSpeed(3);
+      ref.play();
+    }
+  }, [hoveredIndex]);
+
+  const handleMouseLeave = (index) => {
+    const ref = lottieRefs.current[index];
+    if (ref) {
+      ref.setPlayerDirection(-1);
+      ref.setPlayerSpeed(2);
+      ref.play();
+    }
+    setHoveredIndex(null);
+  };
 
   return (
     <div className={styles.informationContainer}>
       {information.map((info, i) => (
         <div
-          key={i}
+          key={info.index}
           className={styles.information}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
+          onMouseEnter={() => setHoveredIndex(i)}
+          onMouseLeave={() => handleMouseLeave(i)}
         >
           <div className={styles.titleContainer}>
             <h2>{info.title}</h2>
