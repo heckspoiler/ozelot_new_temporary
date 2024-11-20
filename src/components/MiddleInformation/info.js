@@ -17,17 +17,17 @@ export const information = [
     stats: '200+ websites delivered',
     services: ['UI/UX Design', 'Web Development', 'Mobile Apps'],
     lottieLink:
-      'https://lottie.host/5fd8b90c-7ee7-4e52-a5e8-03a2549a6922/0Tmr1gNIM4.json',
+      'https://lottie.host/a3d0d9b5-b640-41dc-a4a5-23d46a99a89f/VT19uLSmnt.json',
   },
   {
     id: 3,
-    title: 'Print & Packaging',
+    title: 'Versatile',
     description:
       'Delivering impactful print materials and packaging solutions that stand out on shelves.',
     stats: '500+ print projects',
     services: ['Packaging Design', 'Marketing Materials', 'Editorial Design'],
     lottieLink:
-      'https://lottie.host/c2f11e8e-7107-45e6-9a29-676284825cad/0YhITbtUgS.json',
+      'https://lottie.host/db1d2734-3416-41ba-b2ce-c3724c6071bd/W3zDUgd6Ok.json',
   },
   {
     id: 4,
