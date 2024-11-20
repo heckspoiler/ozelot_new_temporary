@@ -23,9 +23,7 @@
     background-color: white;
 }
 
-.information:hover {
-    mix-blend-mode: difference;
-}
+.information:hover {}
 
 .information:nth-of-type(1):hover {}
 
