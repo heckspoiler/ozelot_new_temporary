@@ -33,6 +33,6 @@ export const information = [
       'Due to our involvement in music and various other creative communities, we have the ability to connect with a wide range of artists and bring intercontinental influences to our work.',
     services: ['Motion Graphics', 'Video Production', '3D Animation'],
     lottieLink:
-      'https://lottie.host/e02d5772-b276-4a93-a1b2-65c6c731d9e5/KwPFWZWVXX.json',
+      'https://lottie.host/2c05d56b-5bc6-4e69-b4d2-946dd2713fcf/4PwHNJR7GG.json',
   },
 ];

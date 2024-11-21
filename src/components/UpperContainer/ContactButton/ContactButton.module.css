@@ -1,12 +1,15 @@
-.container {}
-
 .container a {
     display: flex;
     align-items: center;
     gap: 1rem;
     text-decoration: none;
+    background-color: transparent;
 }
 
 .container a p {
     font-size: 1.2rem;
+}
+
+.container a:hover {
+    background-color: rgb(255, 135, 80);
 }
