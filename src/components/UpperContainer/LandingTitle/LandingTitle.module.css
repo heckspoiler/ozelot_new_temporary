@@ -3,17 +3,19 @@
     width: fit-content;
     z-index: 12;
     background-color: white;
-    mask-image: url("../../images/svg/title.svg");
+    mask-image: url("../../../images/svg/title.svg");
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
     mask-size: contain;
     -webkit-mask-size: contain;
     left: 0;
+    transform: translateX(-2rem)
 }
 
 .titleContainer * {
     pointer-events: none;
 }
+
 
 .block {
     position: absolute;

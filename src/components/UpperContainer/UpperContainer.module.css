@@ -1,3 +1,6 @@
 .main {
-    transform: translateX(-0.5rem)
+    transform: translateX(-0.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
