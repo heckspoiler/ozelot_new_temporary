@@ -1,0 +1,8 @@
+.textContainer {
+    max-width: 40vw;
+}
+
+.textContainer p {
+    font-family: var(--thin-font);
+    font-size: 1rem;
+}

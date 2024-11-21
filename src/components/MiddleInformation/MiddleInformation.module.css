@@ -19,10 +19,12 @@
     flex-direction: column;
     position: relative;
     transition: background-color 0.2s linear;
-    background-color: white;
+
 }
 
-.information:hover {}
+.information:hover {
+    background-color: white;
+}
 
 .information:nth-of-type(1):hover {}
 

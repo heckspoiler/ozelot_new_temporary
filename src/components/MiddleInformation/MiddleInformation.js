@@ -30,11 +30,19 @@ export default function MiddleInformation({ hoveredItem, setHoveredItem }) {
     setHoveredIndex(null);
   };
 
+  useEffect(() => {
+    if (hoveredIndex !== null) {
+      setHoveredItem(hoveredIndex);
+    }
+
+    console.log(hoveredIndex);
+  }, [hoveredItem, hoveredIndex, setHoveredItem]);
+
   return (
     <div className={styles.informationContainer}>
       {information.map((info, i) => (
         <div
-          key={info.index}
+          key={i}
           className={styles.information}
           onMouseEnter={() => setHoveredIndex(i)}
           onMouseLeave={() => handleMouseLeave(i)}

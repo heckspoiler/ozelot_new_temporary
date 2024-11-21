@@ -13,9 +13,21 @@
   src: url("./fonts/Nohemi-Regular.woff2");
 }
 
+@font-face {
+  font-family: "Nohemi Light";
+  src: url("./fonts/Nohemi-Thin.woff2");
+}
+
+@font-face {
+  font-family: "Nohemi Medium";
+  src: url("./fonts/Nohemi-Medium.woff2");
+}
+
 :root {
   --title-font: "Nohemi Bold";
   --text-font: "Nohemi Regular";
+  --thin-font: "Nohemi Thin";
+  --medium-font: "Nohemi Medium";
   --black: rgb(35, 35, 35);
 }
 
@@ -39,6 +51,7 @@ h4,
 h5 {
   font-family: var(--title-font);
 
+
 }
 
 ul,
@@ -51,6 +64,7 @@ a,
 li,
 ul {
   font-family: var(--text-font);
+  line-height: 1.5;
 }
 
 h1 {

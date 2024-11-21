@@ -14,9 +14,7 @@ export default function Model() {
     roughness: 0.8,
     transparent: true,
     opacity: 0.3,
-    clearcoat: 1.0,
-    clearcoatRoughness: 0.2,
-    reflectivity: 1.0,
+    color: 'black',
   });
 
   useEffect(() => {
@@ -41,7 +39,7 @@ export default function Model() {
 
   return (
     <mesh ref={ref} castShadow>
-      <primitive object={gltf.scene} scale={5} rotation={[4.8, 0, 0]} />
+      <primitive object={gltf.scene} scale={3} rotation={[4.8, 0, 0]} />
     </mesh>
   );
 }

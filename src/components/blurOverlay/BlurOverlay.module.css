@@ -6,16 +6,23 @@
     height: 100vh;
     width: 100vw;
     z-index: 0;
-    animation: blurHide 20s forwards;
-    backdrop-filter: blur(5px);
+    animation: blurHide 10s infinite;
 }
 
-@keyframes blurHide {
+.isHovered {
+    backdrop-filter: blur(20px)
+}
+
+/* @keyframes blurHide {
     0% {
-        backdrop-filter: blur(50px);
+        backdrop-filter: blur(10px);
+    }
+
+    50% {
+        backdrop-filter: blur(0px);
     }
 
     100% {
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(10px);
     }
-}
+} */

@@ -7,17 +7,22 @@ import UpperContainer from './components/UpperContainer/UpperContainer';
 import MiddleInformation from './components/MiddleInformation/MiddleInformation';
 
 import Scene from './components/scene/Scene';
+import HoverText from './components/HoverText/HoverText';
 
 function App() {
-  const [hoveredItem, setHoveredItem] = useState(false);
+  const [hoveredItem, setHoveredItem] = useState(0);
   return (
     <div className="App">
       <header className="App-header"></header>
       <Scene />
-      <BlurOverlay />
+      <BlurOverlay hoveredItem />
       <section className={styles.main}>
         <UpperContainer />
-        <MiddleInformation hoveredItem setHoveredItem />
+        <MiddleInformation
+          hoveredItem={hoveredItem}
+          setHoveredItem={setHoveredItem}
+        />
+        <HoverText hoveredItem={hoveredItem} />
       </section>
     </div>
   );

@@ -1,6 +1,7 @@
 .container a {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     text-decoration: none;
     background-color: transparent;
@@ -11,5 +12,5 @@
 }
 
 .container a:hover {
-    background-color: rgb(255, 135, 80);
+    background-color: rgb(80, 255, 194);
 }
