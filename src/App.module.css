@@ -4,6 +4,7 @@
     width: 100vw;
     pointer-events: none;
     z-index: 0;
+    padding: 2rem;
 }
 
 .main * {

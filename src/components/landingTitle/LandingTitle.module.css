@@ -8,8 +8,7 @@
     -webkit-mask-repeat: no-repeat;
     mask-size: contain;
     -webkit-mask-size: contain;
-    left: 50%;
-    transform: translate(-50%)
+    left: 0;
 }
 
 .titleContainer * {

@@ -3,8 +3,8 @@ import React from 'react';
 export default function LandingTitleSvg() {
   return (
     <svg
-      width="1245"
-      height="112"
+      width="1000"
+      height="80"
       viewBox="0 0 1245 112"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

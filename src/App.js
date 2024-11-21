@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import styles from './App.module.css';
 import BlurOverlay from './components/blurOverlay/BlurOverlay';
-import LandingTitle from './components/LandingTitle/LandingTitle';
+import UpperContainer from './components/UpperContainer/UpperContainer';
+
 import MiddleInformation from './components/MiddleInformation/MiddleInformation';
 
 import Scene from './components/scene/Scene';
@@ -15,7 +16,7 @@ function App() {
       <Scene />
       <BlurOverlay />
       <section className={styles.main}>
-        <LandingTitle />
+        <UpperContainer />
         <MiddleInformation hoveredItem setHoveredItem />
       </section>
     </div>

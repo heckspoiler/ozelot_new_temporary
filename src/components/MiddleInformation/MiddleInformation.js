@@ -3,8 +3,6 @@ import styles from './MiddleInformation.module.css';
 import { Player as Lottieplayer } from '@lottiefiles/react-lottie-player';
 import { information } from './info';
 
-import logo from '../../images/svg/logo.png';
-
 export default function MiddleInformation({ hoveredItem, setHoveredItem }) {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const lottieRefs = useRef([]);

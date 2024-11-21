@@ -10,14 +10,6 @@ export const information = [
   },
   {
     id: 2,
-    title: 'Transdisciplinary',
-    description: 'Remember the two in one skateboard? ',
-    services: ['UI/UX Design', 'Web Development', 'Mobile Apps'],
-    lottieLink:
-      'https://lottie.host/3b8a4597-0567-4384-94d2-345b5248d367/22yDGAWJZC.json',
-  },
-  {
-    id: 3,
     title: 'Versatile',
     description:
       'We utilize many building blocks to create a cohesive brand experience across all touchpoints and always try to bridge the gap between phyiscal and digital realms.',
@@ -25,6 +17,15 @@ export const information = [
     lottieLink:
       'https://lottie.host/db1d2734-3416-41ba-b2ce-c3724c6071bd/W3zDUgd6Ok.json',
   },
+  {
+    id: 3,
+    title: 'Transdisciplinary',
+    description: 'Remember the two in one skateboard? ',
+    services: ['UI/UX Design', 'Web Development', 'Mobile Apps'],
+    lottieLink:
+      'https://lottie.host/3b8a4597-0567-4384-94d2-345b5248d367/22yDGAWJZC.json',
+  },
+
   {
     id: 4,
     title: 'Collaborative',
