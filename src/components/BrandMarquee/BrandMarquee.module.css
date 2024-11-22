@@ -1,1 +1,5 @@
-.marqueeSection {}
+.marqueeSection {
+
+    border-left: 1px solid var(--black);
+    border-right: 1px solid var(--black)
+}

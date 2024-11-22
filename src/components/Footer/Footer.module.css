@@ -1,0 +1,54 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    border-top: 1px solid var(--black);
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoContainer,
+.addressContainer,
+.socialsContainer {
+    width: 33%;
+}
+
+.logoContainer img {
+    height: 2.5rem;
+}
+
+.addressContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addressContainer h3 {
+    font-size: 0.8rem;
+    line-height: 1;
+
+}
+
+.addressContainer p {
+    font-size: 0.7rem;
+    line-height: 1;
+
+}
+
+.socialsContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: right;
+}
+
+.socialsContainer a {
+    display: flex;
+}
+
+.socialsContainer a img {
+    height: 1.3rem;
+}

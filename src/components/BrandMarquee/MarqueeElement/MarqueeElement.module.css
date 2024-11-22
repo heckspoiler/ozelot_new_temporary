@@ -1,13 +1,28 @@
 .container {
-    height: 2rem;
     width: fit-content;
     padding: 0 4rem;
+    position: relative;
+    height: 2rem;
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%
+}
+
+.imageContainer:hover .overlay {
+    background-color: var(--hovercolor);
+    mix-blend-mode: screen;
 }
 
 .container img {
     height: 100%;
-}
-
-.container svg:hover {
-    fill: var(--hovercolor);
+    height: 2rem;
 }

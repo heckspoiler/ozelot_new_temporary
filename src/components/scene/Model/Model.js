@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { useFrame, useThree, useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { Clock, MeshStandardMaterial } from 'three';
-import asset from '../../../asset/logo.glb';
+import asset from '../../../asset/logo_new.glb';
 
 export default function Model() {
   const { viewport } = useThree();
@@ -39,7 +39,7 @@ export default function Model() {
 
   return (
     <mesh ref={ref} castShadow>
-      <primitive object={gltf.scene} scale={3} rotation={[4.8, 0, 0]} />
+      <primitive object={gltf.scene} scale={3} rotation={[0, 0, 0]} />
     </mesh>
   );
 }

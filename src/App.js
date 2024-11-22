@@ -9,6 +9,7 @@ import MiddleInformation from './components/MiddleInformation/MiddleInformation'
 import Scene from './components/scene/Scene';
 import HoverText from './components/HoverText/HoverText';
 import BrandMarquee from './components/BrandMarquee/BrandMarquee';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [hoveredItem, setHoveredItem] = useState(null);
@@ -26,6 +27,7 @@ function App() {
         <HoverText hoveredItem={hoveredItem} />
         <BrandMarquee />
       </section>
+      <Footer />
     </div>
   );
 }
