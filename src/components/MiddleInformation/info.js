@@ -13,7 +13,7 @@ export const information = [
     description: `Our expertise spans both physical and digital realms, allowing us to create seamless brand experiences across all touchpoints. From tactile packaging that engages the senses to responsive digital interfaces, we adapt and evolve your brand's expression while maintaining its core essence. Our holistic approach ensures your brand remains consistent yet flexible across every medium and platform.`,
     services: ['Packaging Design', 'Marketing Materials', 'Editorial Design'],
     lottieLink:
-      'https://lottie.host/db1d2734-3416-41ba-b2ce-c3724c6071bd/W3zDUgd6Ok.json',
+      'https://lottie.host/68991317-b558-4f24-acd3-2a9fdef7ab6d/lwZxcELlqA.json',
   },
   {
     id: 3,
