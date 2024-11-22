@@ -1,64 +1,101 @@
 import React, { useEffect, useState, useRef } from 'react';
 import styles from './MiddleInformation.module.css';
-import { Player as Lottieplayer } from '@lottiefiles/react-lottie-player';
+import { Player as LottiePlayer } from '@lottiefiles/react-lottie-player';
 import { information } from './info';
 
+/**
+ * @typedef {Object} AnimationConfig
+ * @property {number} direction - The direction of the animation (1 for forward, -1 for reverse)
+ * @property {number} speed - The speed of the animation
+ */
+
+const ANIMATION_CONFIGS = {
+  hover: { direction: 1, speed: 3 },
+  unhover: { direction: -1, speed: 2 },
+};
+
+/**
+ * Handles the animation of a single Lottie player
+ * @param {Object} ref - Reference to the Lottie player
+ * @param {AnimationConfig} config - Animation configuration
+ */
+const playAnimation = (ref, { direction, speed }) => {
+  if (!ref) return;
+
+  ref.setPlayerDirection(direction);
+  ref.setPlayerSpeed(speed);
+  ref.play();
+};
+
+/**
+ * Individual information card component
+ */
+const InformationCard = ({ info, index, onHover, onLeave, lottieRef }) => (
+  <div
+    className={styles.information}
+    onMouseEnter={() => onHover(index)}
+    onMouseLeave={() => onLeave(index)}
+  >
+    <div className={styles.titleContainer}>
+      <h2>{info.title}</h2>
+    </div>
+    <div className={styles.lottieContainer}>
+      <LottiePlayer
+        ref={(el) => (lottieRef.current[index] = el)}
+        src={info.lottieLink}
+        keepLastFrame={true}
+        className={styles.lottie}
+      />
+    </div>
+  </div>
+);
+
+/**
+ * MiddleInformation component displays a grid of animated information cards
+ * @param {Object} props - Component props
+ * @param {number|null} props.hoveredItem - Currently hovered item index
+ * @param {Function} props.setHoveredItem - Function to update hovered item
+ */
 export default function MiddleInformation({ hoveredItem, setHoveredItem }) {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const lottieRefs = useRef([]);
 
+  // Initialize refs array
   useEffect(() => {
     lottieRefs.current = lottieRefs.current.slice(0, information.length);
   }, []);
 
+  // Handle hover animation and state
   useEffect(() => {
-    if (hoveredIndex !== null && lottieRefs.current[hoveredIndex]) {
-      const ref = lottieRefs.current[hoveredIndex];
-      ref.setPlayerDirection(1);
-      ref.setPlayerSpeed(3);
-      ref.play();
-    }
-  }, [hoveredIndex]);
+    if (hoveredIndex === null) return;
 
-  const handleMouseLeave = (index) => {
-    const ref = lottieRefs.current[index];
-    if (ref) {
-      ref.setPlayerDirection(-1);
-      ref.setPlayerSpeed(2);
-      ref.play();
-    }
-    setHoveredIndex(null);
+    const ref = lottieRefs.current[hoveredIndex];
+    playAnimation(ref, ANIMATION_CONFIGS.hover);
+    setHoveredItem(hoveredIndex);
+  }, [hoveredIndex, setHoveredItem]);
+
+  const handleHover = (index) => {
+    setHoveredIndex(index);
   };
 
-  useEffect(() => {
-    if (hoveredIndex !== null) {
-      setHoveredItem(hoveredIndex);
-    }
-
-    console.log(hoveredIndex);
-  }, [hoveredItem, hoveredIndex, setHoveredItem]);
+  const handleLeave = (index) => {
+    const ref = lottieRefs.current[index];
+    playAnimation(ref, ANIMATION_CONFIGS.unhover);
+    setHoveredIndex(null);
+    setHoveredItem(null);
+  };
 
   return (
     <div className={styles.informationContainer}>
-      {information.map((info, i) => (
-        <div
-          key={i}
-          className={styles.information}
-          onMouseEnter={() => setHoveredIndex(i)}
-          onMouseLeave={() => handleMouseLeave(i)}
-        >
-          <div className={styles.titleContainer}>
-            <h2>{info.title}</h2>
-          </div>
-          <div className={styles.lottieContainer}>
-            <Lottieplayer
-              ref={(el) => (lottieRefs.current[i] = el)}
-              src={info.lottieLink}
-              keepLastFrame={true}
-              className={styles.lottie}
-            />
-          </div>
-        </div>
+      {information.map((info, index) => (
+        <InformationCard
+          key={index}
+          info={info}
+          index={index}
+          onHover={handleHover}
+          onLeave={handleLeave}
+          lottieRef={lottieRefs}
+        />
       ))}
     </div>
   );

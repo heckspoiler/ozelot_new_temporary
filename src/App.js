@@ -10,7 +10,7 @@ import Scene from './components/scene/Scene';
 import HoverText from './components/HoverText/HoverText';
 
 function App() {
-  const [hoveredItem, setHoveredItem] = useState(0);
+  const [hoveredItem, setHoveredItem] = useState(null);
   return (
     <div className="App">
       <header className="App-header"></header>
