@@ -1,0 +1,9 @@
+.container {
+    height: 2rem;
+    width: fit-content;
+    padding: 0 4rem;
+}
+
+.container img {
+    height: 100%;
+}

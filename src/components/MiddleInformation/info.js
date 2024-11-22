@@ -28,7 +28,7 @@ export const information = [
   {
     id: 4,
     title: 'Collaborative',
-    description: `Our deep roots in creative communities across music, art, and design enable us to orchestrate unique creative partnerships. We curate and connect diverse talents from our global network, bringing fresh perspectives and cultural cross-pollination to every project. This collaborative spirit allows us to create work that resonates across cultural boundaries and pushes creative limits.`,
+    description: `Our deep roots in creative communities across music, art, and design enable us to orchestrate unique creative partnerships. We curate and connect diverse talents from our network, bringing fresh perspectives and cultural cross-pollination to every project. This collaborative spirit allows us to create work that resonates across cultural boundaries and pushes creative limits.`,
     services: ['Motion Graphics', 'Video Production', '3D Animation'],
     lottieLink:
       'https://lottie.host/2c05d56b-5bc6-4e69-b4d2-946dd2713fcf/4PwHNJR7GG.json',

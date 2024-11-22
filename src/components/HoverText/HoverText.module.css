@@ -1,5 +1,6 @@
 .textContainer {
     max-width: 40vw;
+    min-height: 15vh;
 }
 
 .textContainer p {
