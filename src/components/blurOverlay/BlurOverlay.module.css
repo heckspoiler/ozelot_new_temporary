@@ -10,7 +10,7 @@
 }
 
 .isHovered {
-    backdrop-filter: blur(20px)
+    backdrop-filter: blur(2px)
 }
 
 /* @keyframes blurHide {

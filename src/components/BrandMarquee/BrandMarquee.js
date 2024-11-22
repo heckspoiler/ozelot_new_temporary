@@ -16,6 +16,7 @@ export default function BrandMarquee() {
             src={brand.src}
             alt={brand.alt}
             brandname={brand.brandname}
+            url={brand.url}
           />
         ))}
       </Marquee>
