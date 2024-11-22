@@ -5,6 +5,13 @@
     height: 2rem;
 }
 
+
+.textContainer {
+    position: absolute;
+    top: -100%;
+    transform: translateX()
+}
+
 .imageContainer {
     position: relative;
 }
@@ -14,13 +21,13 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%
+    width: 100%;
+    opacity: 0.5;
+    background-color: var(--hovercolor);
+    mix-blend-mode: darken;
 }
 
-.imageContainer:hover .overlay {
-    background-color: var(--hovercolor);
-    mix-blend-mode: screen;
-}
+.imageContainer:hover .overlay {}
 
 .container img {
     height: 100%;
