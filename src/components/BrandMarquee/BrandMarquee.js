@@ -10,7 +10,7 @@ import { brandArray } from './BrandObject/BrandObject';
 export default function BrandMarquee() {
   return (
     <section className={styles.marqueeSection}>
-      <Marquee gradient={false} speed={40}>
+      <Marquee gradient={false} speed={20}>
         {brandArray.map((brand) => (
           <MarqueeElement
             src={brand.src}
