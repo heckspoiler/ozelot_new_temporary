@@ -21,13 +21,25 @@ export default function Footer() {
         <p>CH - 8003 Zurich</p>
       </div>
       <div className={styles.socialsContainer}>
-        <a>
+        <a
+          href="https://www.instagram.com/ozelotltd/?hl=de"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={insta} alt="Instagram" />
         </a>
-        <a>
+        <a
+          href="https://www.instagram.com/ozelotltd/?hl=de"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={spotify} alt="Spotify" />
         </a>
-        <a>
+        <a
+          href="https://soundcloud.com/ozelot-ltd"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={soundcloud} alt="Soundcloud" />
         </a>
       </div>
