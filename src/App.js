@@ -10,22 +10,31 @@ import Scene from './components/scene/Scene';
 import HoverText from './components/HoverText/HoverText';
 import BrandMarquee from './components/BrandMarquee/BrandMarquee';
 import Footer from './components/Footer/Footer';
+import SplashScreen from './components/SplashScreen/SplashScreen';
 
 function App() {
   const [hoveredItem, setHoveredItem] = useState(null);
+  const [isSplashscreen, setIsSplashscreen] = useState(true);
   return (
     <div className="App">
       <header className="App-header"></header>
+
       <Scene />
       <BlurOverlay hoveredItem />
       <section className={styles.main}>
-        <UpperContainer />
-        <MiddleInformation
-          hoveredItem={hoveredItem}
-          setHoveredItem={setHoveredItem}
-        />
-        <HoverText hoveredItem={hoveredItem} />
-        <BrandMarquee />
+        {isSplashscreen ? (
+          <SplashScreen />
+        ) : (
+          <>
+            <UpperContainer />
+            <MiddleInformation
+              hoveredItem={hoveredItem}
+              setHoveredItem={setHoveredItem}
+            />
+            <HoverText hoveredItem={hoveredItem} />
+            <BrandMarquee />
+          </>
+        )}
       </section>
       <Footer />
     </div>
