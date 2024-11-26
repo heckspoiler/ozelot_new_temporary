@@ -12,5 +12,5 @@
 }
 
 .container a:hover {
-    background-color: var(--hovercolor);
+    background-image: var(--hovercolor);
 }

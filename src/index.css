@@ -29,7 +29,8 @@
   --thin-font: "Nohemi Thin";
   --medium-font: "Nohemi Medium";
   --black: rgb(35, 35, 35);
-  --hovercolor: rgb(203, 203, 203);
+  --hovercolor: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+
 }
 
 * {
@@ -85,5 +86,5 @@ button {
 }
 
 button:hover {
-  background-color: var(--hovercolor);
+  background-image: var(--hovercolor);
 }
