@@ -16,7 +16,7 @@ export default function Logo() {
       </defs>
       <g transform="matrix(1.3333333,0,0,-1.3333333,0,2666.6667)" id="g10">
         <g id="g12">
-          <g clip-path="url(#clipPath18)" id="g14">
+          <g clipPath="url(#clipPath18)" id="g14">
             <g transform="translate(992.2389,1188.8573)" id="g20">
               <path
                 id="path22"
