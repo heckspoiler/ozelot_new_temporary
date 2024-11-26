@@ -8,7 +8,7 @@ import spotify from '../../images/svg/socials/spotify.svg';
 
 import Logo from './Logo/Logo';
 
-export default function SplashScreen({ isSplashScreen, setIsSplashscreen }) {
+export default function SplashScreen({ setIsSplashscreen }) {
   const [isClicked, setIsClicked] = useState(false);
 
   useEffect(() => {
@@ -23,20 +23,13 @@ export default function SplashScreen({ isSplashScreen, setIsSplashscreen }) {
       className={`${styles.main} ${isClicked ? styles.splashScreenGone : null}`}
     >
       <div className={styles.textContainer}>
-        <h1>Something is cooking at ozelot studios</h1>
+        <h1>Ozelot Studios is transforming</h1>
         <p>
-          Ozelot Studios is transforming. As advocates of digital innovation,
-          we're expanding our creative horizons and reshaping our approach to
-          meet the evolving demands of the digital age. Our mission is to push
+          We are expanding our creative horizons and reshaping our approach to
+          meet the evolving demands of the future. Our mission is to push
           boundaries at the intersection of technology and creativity. We're
-          investing in cutting-edge technologies and cultivating fresh
-          perspectives to deliver exceptional digital experiences. From
-          immersive web applications to innovative design solutions, we're
-          building a future where technology enhances creative expression. We
-          remain committed to our core values while embracing new possibilities.
-          This transformation positions Ozelot Studios as a forward-thinking
-          creative partner ready to tackle the challenges of tomorrow's digital
-          landscape. Join us as we shape the future of digital creativity.
+          investing in cutting-edge technologies and a “the physical” to deliver
+          exceptional experiences.
         </p>
 
         <div className={styles.socialsContainer}>

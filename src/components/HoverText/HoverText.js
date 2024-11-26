@@ -16,7 +16,7 @@ export default function HoverText({ hoveredItem }) {
       <p>
         {textElement !== null
           ? information[textElement]?.description
-          : `Ozelot Studio is a mixed media studio, with a mission to create future ideas, immersive and relevant brand experiences. Founded in 2020 by Manuel Fischer, Nadim Elhady, Yannick Steitz and Etienne Pavoncello, we are constantly looking for creative processes that elevates a brand’s identity in the physical and digital realm.`}
+          : `Ozelot Studio is a mixed media studio, with a mission to create future ideas, immersive and relevant brand experiences. We are constantly looking for creative processes that elevates a brand’s identity in the digital and physical realm.`}
       </p>
     </div>
   );

@@ -82,7 +82,7 @@ export default function MiddleInformation({ hoveredItem, setHoveredItem }) {
     const ref = lottieRefs.current[index];
     playAnimation(ref, ANIMATION_CONFIGS.unhover);
     setHoveredIndex(null);
-    setHoveredItem(null);
+    // setHoveredItem(null);
   };
 
   return (
