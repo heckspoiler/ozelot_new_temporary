@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './LandingTitle.module.css';
 import LandingTitleSvg from './LandingTitleSvg/LandingTitleSvg';
+import LandingTitleMobile from './LandingTitleSvg/LandingTitleMobile';
+
+import { useMobile } from '../../MobileProvider/MobileProvider';
 
 const LandingTitle = () => {
   const today = new Date();
@@ -10,14 +13,16 @@ const LandingTitle = () => {
   const totalDays = (endDate - startDate) / (1000 * 60 * 60 * 24);
   const daysLeft = (endDate - today) / (1000 * 60 * 60 * 24);
 
-  // Calculate progress percentage
   const progress = ((totalDays - daysLeft) / totalDays) * 100;
 
-  console.log(progress);
+  const isMobile = useMobile();
+
+  console.log(isMobile);
 
   return (
     <div className={styles.titleContainer}>
-      <LandingTitleSvg />
+      {isMobile ? <LandingTitleMobile /> : <LandingTitleSvg />}
+
       <div
         className={styles.block}
         style={{

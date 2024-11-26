@@ -9,7 +9,7 @@
     mask-size: contain;
     -webkit-mask-size: contain;
     left: 0;
-    transform: translateX(-2rem)
+    transform: translateX(-3.5rem)
 }
 
 .titleContainer * {
@@ -24,3 +24,42 @@
     width: 100%;
     background-color: var(--black);
 }
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {}
+
+
+
+/* Mobile */
+@media (max-width: 768px) {
+    .titleContainer {
+        position: relative;
+        width: fit-content;
+        z-index: 12;
+        background-color: transparent;
+        mask-image: url("../../../images/svg/mobile_title.svg");
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        mask-size: contain;
+        -webkit-mask-size: contain;
+        left: 0;
+        transform: translateX(0rem);
+
+    }
+
+    .titleContainer * {
+        pointer-events: none;
+    }
+
+
+    .block {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--black);
+    }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 768px) and (max-width: 1120px) {}

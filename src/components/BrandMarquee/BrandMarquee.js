@@ -7,8 +7,6 @@ import MarqueeElement from './MarqueeElement/MarqueeElement';
 
 import { brandArray } from './BrandObject/BrandObject';
 
-console.log(brandArray[0].path);
-
 export default function BrandMarquee() {
   return (
     <section className={styles.marqueeSection}>

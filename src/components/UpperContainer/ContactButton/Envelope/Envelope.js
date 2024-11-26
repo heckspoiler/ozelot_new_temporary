@@ -1,8 +1,15 @@
 import React from 'react';
 
+import { useMobile } from '../../../MobileProvider/MobileProvider';
+
 export default function Envelope() {
+  const isMobile = useMobile();
   return (
-    <svg width="38.59" height="18.79" viewBox="0 0 38.59 18.79">
+    <svg
+      width={`${!isMobile ? '38.59' : '20'}`}
+      height="18.79"
+      viewBox="0 0 38.59 18.79"
+    >
       <path
         d="M37.58.18l-.87.5-17.43,9.92L1.88.68,1.01.18h-.32v18.61h37.21V.18h-.32ZM37.4,18.29H1.19V.86l15.37,8.77.39.22.12.07,2.21,1.26,2.21-1.26.51-.29h.01L37.4.86v17.43Z"
         fill="#231f20"

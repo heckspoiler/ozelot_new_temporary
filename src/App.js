@@ -1,4 +1,3 @@
-// App.jsx
 import React, { useState, useEffect } from 'react';
 
 import styles from './App.module.css';
@@ -11,10 +10,16 @@ import BrandMarquee from './components/BrandMarquee/BrandMarquee';
 import Footer from './components/Footer/Footer';
 import SplashScreen from './components/SplashScreen/SplashScreen';
 
-function App() {
+import {
+  MobileProvider,
+  useMobile,
+} from './components/MobileProvider/MobileProvider';
+
+function AppContent() {
   const [hoveredItem, setHoveredItem] = useState(null);
   const [isSplashscreen, setIsSplashscreen] = useState(true);
   const [showMain, setShowMain] = useState(false);
+  const isMobile = useMobile();
 
   useEffect(() => {
     !isSplashscreen && setShowMain(true);
@@ -31,6 +36,7 @@ function App() {
         <SplashScreen
           isSplashscreen={isSplashscreen}
           setIsSplashscreen={setIsSplashscreen}
+          isMobile={isMobile}
         />
       ) : (
         <section
@@ -47,6 +53,14 @@ function App() {
         </section>
       )}
     </div>
+  );
+}
+
+function App() {
+  return (
+    <MobileProvider>
+      <AppContent />
+    </MobileProvider>
   );
 }
 

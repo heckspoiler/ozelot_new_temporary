@@ -110,6 +110,19 @@ button:hover {
     outline: 0;
     font-size: 1rem;
   }
+
+  h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
 }
 
 /* Tablet and Smaller Desktop */
