@@ -8,9 +8,80 @@
     width: 80svw;
     background-color: white;
     border: 1px solid var(--black);
-    padding: 1rem;
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1)
+}
+
+.splashScreenGone {
+    transform: translateY(-180%) translateX(-50%);
 }
 
 .main h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
+    overflow: hidden;
+}
+
+.textContainer,
+.logoContainer {
+    width: 49.5%;
+}
+
+.block {
+    border: 0.5px solid black;
+    height: 100%;
+    width: 0.1%;
+}
+
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.textContainer p {
+    font-size: 0.9rem;
+    width: 90%;
+}
+
+.socialsContainer {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 2rem;
+}
+
+.socialIcons img {
+    height: 2rem;
+}
+
+.logoContainer {
+    height: 100%;
+    position: relative;
+}
+
+.buttonContainer {
+    border: 1px solid black;
+    width: fit-content;
+}
+
+
+
+.logoDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.logoDiv svg {
+    height: 30rem;
+    width: auto;
 }

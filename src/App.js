@@ -21,22 +21,24 @@ function App() {
 
       <Scene />
       <BlurOverlay hoveredItem />
-      <section className={styles.main}>
-        {isSplashscreen ? (
-          <SplashScreen />
-        ) : (
-          <>
-            <UpperContainer />
-            <MiddleInformation
-              hoveredItem={hoveredItem}
-              setHoveredItem={setHoveredItem}
-            />
-            <HoverText hoveredItem={hoveredItem} />
-            <BrandMarquee />
-          </>
-        )}
-      </section>
-      <Footer />
+
+      {isSplashscreen ? (
+        <SplashScreen
+          isSplashscreen={isSplashscreen}
+          setIsSplashscreen={setIsSplashscreen}
+        />
+      ) : (
+        <section className={styles.main}>
+          <UpperContainer />
+          <MiddleInformation
+            hoveredItem={hoveredItem}
+            setHoveredItem={setHoveredItem}
+          />
+          <HoverText hoveredItem={hoveredItem} />
+          <BrandMarquee />
+          <Footer />
+        </section>
+      )}
     </div>
   );
 }

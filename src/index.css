@@ -72,3 +72,18 @@ h1 {
   font-size: 8rem;
   text-transform: uppercase;
 }
+
+button {
+  background-color: white;
+  font-family: var(--text-font);
+  cursor: pointer;
+  border: 0px solid var(--black);
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  outline: 0;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: var(--hovercolor);
+}
