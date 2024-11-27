@@ -21,8 +21,7 @@ const LandingTitle = () => {
 
   return (
     <div className={styles.titleContainer}>
-      {isMobile ? <LandingTitleMobile /> : <LandingTitleSvg />}
-
+      <LandingTitleSvg />
       <div
         className={styles.block}
         style={{

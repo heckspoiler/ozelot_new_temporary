@@ -35,15 +35,15 @@
     .titleContainer {
         position: relative;
         width: fit-content;
-        z-index: 12;
-        background-color: transparent;
-        mask-image: url("../../../images/svg/mobile_title.svg");
+        z-index: 15;
+        mask-image: url("../../../images/svg/title.svg");
         mask-repeat: no-repeat;
         -webkit-mask-repeat: no-repeat;
         mask-size: contain;
         -webkit-mask-size: contain;
         left: 0;
         transform: translateX(0rem);
+        background-color: white;
 
     }
 
