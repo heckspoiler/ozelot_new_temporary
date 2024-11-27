@@ -99,8 +99,8 @@
 /* Mobile */
 @media (max-width: 768px) {
     .main {
-        height: 90vh;
-        width: 85vw;
+        height: 90svh;
+        width: 85svw;
         padding: 1rem;
         flex-direction: column;
         gap: 1rem;
