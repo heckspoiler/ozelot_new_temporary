@@ -20,4 +20,10 @@
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 841px) and (max-width: 1120px) {}
+@media (min-width: 841px) and (max-width: 1120px) {
+    .textContainer {
+        width: fit-content;
+        max-width: 100%;
+        min-height: 10vh;
+    }
+}

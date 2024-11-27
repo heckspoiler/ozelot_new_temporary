@@ -28,7 +28,7 @@
 
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 840px) {
 
     .container {
         width: fit-content;
@@ -54,4 +54,26 @@
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 768px) and (max-width: 1120px) {}
+@media (min-width: 768px) and (max-width: 1120px) {
+    .container {
+        width: fit-content;
+        padding: 0 2rem;
+        position: relative;
+        height: 2vh;
+    }
+
+
+    .imageContainer {
+        position: relative;
+
+    }
+
+    .imageContainer img {
+        height: 100%;
+        height: 2vh;
+    }
+
+    .imageContainer:hover {
+        background: var(--hovercolor);
+    }
+}

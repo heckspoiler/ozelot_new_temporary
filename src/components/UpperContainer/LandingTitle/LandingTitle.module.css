@@ -64,7 +64,9 @@
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 841px) and (max-width: 1120px) {
-    .titleContainer {}
+    .titleContainer {
+        transform: translateX(0)
+    }
 
     .titleContainer * {
         pointer-events: none;
