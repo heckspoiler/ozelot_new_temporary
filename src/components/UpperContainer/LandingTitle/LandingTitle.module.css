@@ -37,7 +37,7 @@
         position: relative;
         width: fit-content;
         z-index: 15;
-        mask-image: url("../../../images/svg/title.svg");
+        mask-image: url("../../../images/svg/mobile_title.svg");
         mask-repeat: no-repeat;
         -webkit-mask-repeat: no-repeat;
         mask-size: contain;

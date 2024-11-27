@@ -29,7 +29,7 @@
   --thin-font: "Nohemi Thin";
   --medium-font: "Nohemi Medium";
   --black: rgb(35, 35, 35);
-  --hovercolor: rgb(202, 202, 202);
+  --hovercolor: rgb(240, 240, 240);
 }
 
 ::selection {
