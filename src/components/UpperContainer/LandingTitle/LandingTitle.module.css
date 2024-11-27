@@ -32,7 +32,7 @@
 
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width:840px) {
     .titleContainer {
         position: relative;
         width: fit-content;
@@ -63,4 +63,19 @@
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 768px) and (max-width: 1120px) {}
+@media (min-width: 841px) and (max-width: 1120px) {
+    .titleContainer {}
+
+    .titleContainer * {
+        pointer-events: none;
+    }
+
+
+    .block {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--black);
+    }
+}

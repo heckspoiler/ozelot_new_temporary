@@ -10,7 +10,7 @@
 
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 840px) {
     .textContainer {
         width: fit-content;
         max-width: 100%;
@@ -20,4 +20,4 @@
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 768px) and (max-width: 1120px) {}
+@media (min-width: 841px) and (max-width: 1120px) {}

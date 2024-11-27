@@ -3,12 +3,12 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 const mobileContext = createContext();
 
 export const MobileProvider = ({ children }) => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768); // Set initial state here
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 840); // Set initial state here
 
   useEffect(() => {
     // Check immediately on mount
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 840);
     };
 
     // Run once on mount
