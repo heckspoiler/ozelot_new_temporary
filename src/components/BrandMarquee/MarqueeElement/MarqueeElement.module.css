@@ -19,7 +19,7 @@
 }
 
 .imageContainer:hover {
-    background-image: var(--hovercolor);
+    background: var(--hovercolor);
 }
 
 /* Enable hover only on non-touch devices */
@@ -49,7 +49,7 @@
     }
 
     .imageContainer:hover {
-        background-image: var(--hovercolor);
+        background: var(--hovercolor);
     }
 }
 

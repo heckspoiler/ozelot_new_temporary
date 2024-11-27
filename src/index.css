@@ -29,8 +29,7 @@
   --thin-font: "Nohemi Thin";
   --medium-font: "Nohemi Medium";
   --black: rgb(35, 35, 35);
-  --hovercolor: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-
+  --hovercolor: rgb(202, 202, 202);
 }
 
 ::selection {
@@ -92,7 +91,7 @@ button {
 }
 
 button:hover {
-  background-image: var(--hovercolor);
+  background: var(--hovercolor);
 }
 
 /* Enable hover only on non-touch devices */

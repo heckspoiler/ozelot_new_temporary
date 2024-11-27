@@ -12,7 +12,7 @@
 }
 
 .container a:hover {
-    background-image: var(--hovercolor);
+    background: var(--hovercolor);
 }
 
 
