@@ -11,6 +11,7 @@
     padding: 2rem;
     display: flex;
     gap: 1rem;
+    border-radius: 20px;
     transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1)
 }
 
@@ -94,7 +95,8 @@
 /* Mobile */
 @media (max-width: 768px) {
     .main {
-
+        height: 90vh;
+        width: 85vw;
         padding: 1rem;
         flex-direction: column;
         gap: 1rem;
@@ -106,7 +108,7 @@
     }
 
     .main h1 {
-        font-size: 2rem;
+        font-size: calc(1rem + 1vh);
         overflow: hidden;
         text-align: center;
     }
@@ -133,7 +135,7 @@
     }
 
     .textContainer p {
-        font-size: 0.8rem;
+        font-size: calc(0.5rem + 0.4vhs);
         width: 100%;
         text-align: center;
     }

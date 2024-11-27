@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './LandingTitle.module.css';
 import LandingTitleSvg from './LandingTitleSvg/LandingTitleSvg';
-import LandingTitleMobile from './LandingTitleSvg/LandingTitleMobile';
 
 import { useMobile } from '../../MobileProvider/MobileProvider';
 
