@@ -53,6 +53,10 @@
     flex-direction: column;
 }
 
+.socialsContainer h4 {
+    font-family: var(--medium-font)
+}
+
 .socialIcons {
     display: flex;
     gap: 2rem;

@@ -1,9 +1,4 @@
 @font-face {
-  font-family: "Neuvetica Bold";
-  src: url("./fonts/Neuvetica-Bold.woff");
-}
-
-@font-face {
   font-family: "Nohemi Bold";
   src: url("./fonts/Nohemi-Bold.woff2");
 }
@@ -43,22 +38,28 @@
   padding: 0;
   box-sizing: border-box;
   color: var(--black);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  -webkit-text-stroke: 0.001px;
 }
 
 body {
-  min-height: 100vh;
-  min-width: 100vw;
+  min-height: 100svh;
+  min-width: 100svw;
   background-color: transparent;
 }
 
 h1,
-h2,
+h2 {
+  font-family: var(--title-font);
+}
+
 h3,
 h4,
 h5 {
-  font-family: var(--title-font);
-
-
+  font-family: var(--medium-font);
 }
 
 ul,
@@ -135,5 +136,15 @@ button:hover {
 
   p {
     font-size: calc(0.7rem + 0.4vh);
+  }
+}
+
+
+
+@media not all and (min-resolution:.001dpcm) {
+  @supports (-webkit-appearance:none) {
+    * {
+      -webkit-font-smoothing: subpixel-antialiased;
+    }
   }
 }
