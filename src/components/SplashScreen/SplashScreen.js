@@ -5,6 +5,7 @@ import styles from './SplashScreen.module.css';
 import soundcloud from '../../images/svg/socials/soundcloud.svg';
 import insta from '../../images/svg/socials/insta.svg';
 import spotify from '../../images/svg/socials/spotify.svg';
+import bandcamp from '../../images/svg/socials/bandcamp.svg';
 
 import Logo from './Logo/Logo';
 
@@ -43,11 +44,11 @@ export default function SplashScreen({ setIsSplashscreen }) {
               <img src={insta} alt="Instagram" />
             </a>
             <a
-              href="https://www.instagram.com/ozelotltd/?hl=de"
+              href="https://ozelot-ltd.bandcamp.com/"
               target="_blank"
               rel="noreferrer"
             >
-              <img src={spotify} alt="Spotify" />
+              <img src={bandcamp} alt="Spotify" />
             </a>
             <a
               href="https://soundcloud.com/ozelot-ltd"
@@ -59,7 +60,7 @@ export default function SplashScreen({ setIsSplashscreen }) {
           </div>
         </div>
         <div className={styles.buttonContainer}>
-          <button onClick={() => setIsClicked(true)}>Enter Ozelot.ltd</button>
+          <button onClick={() => setIsClicked(true)}>Enter</button>
         </div>
       </div>
       <div className={styles.block}></div>

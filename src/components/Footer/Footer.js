@@ -6,7 +6,7 @@ import logo from '../../images/logo.png';
 
 import insta from '../../images/svg/socials/insta.svg';
 import spotify from '../../images/svg/socials/spotify.svg';
-
+import bandcamp from '../../images/svg/socials/bandcamp.svg';
 import soundcloud from '../../images/svg/socials/soundcloud.svg';
 
 export default function Footer() {
@@ -29,11 +29,11 @@ export default function Footer() {
           <img src={insta} alt="Instagram" />
         </a>
         <a
-          href="https://www.instagram.com/ozelotltd/?hl=de"
+          href="https://ozelot-ltd.bandcamp.com/"
           target="_blank"
           rel="noreferrer"
         >
-          <img src={spotify} alt="Spotify" />
+          <img src={bandcamp} alt="Spotify" />
         </a>
         <a
           href="https://soundcloud.com/ozelot-ltd"
