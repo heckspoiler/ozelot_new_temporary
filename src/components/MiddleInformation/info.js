@@ -2,14 +2,14 @@ export const information = [
   {
     id: 1,
     title: 'About Ozelot',
-    description: `Ozelot Studios is a mixed media powerhouse with a mission to create future ideas, immersive and relevant brand experiences. We are constantly looking for creative processes that elevate a brand’s identity in the digital and physical realms.`,
+    description: `Ozelot Studio is a mixed media studio with a mission to create future ideas and immersive and brand experiences. We are constantly looking for creative processes that elevates a brand’s identity in the digital and physical realm.`,
     lottieLink:
       'https://lottie.host/efa7b186-92c0-48a1-9dbb-fff1b4b6e315/Pqw8gSpxNO.json',
   },
   {
     id: 2,
     title: 'Forward Thinking',
-    description: `We craft innovative design solutions that push creative boundaries while maintaining a strategic focus. By blending current trends with timeless design principles, we create future-proof brand identity and experiences.`,
+    description: `We craft innovative design solutions that push creative boundaries while maintaining a strategic focus. By blending current trends with timeless design principles, we create future-proof identity experiences.`,
     lottieLink:
       'https://lottie.host/c364bbfb-3f3f-4ae5-8c45-300faa5d5b5d/Batx1HNJyD.json',
   },
