@@ -30,6 +30,7 @@
 
     .container a p {
         font-size: 0.8rem;
+        transform: translateY(2px)
     }
 
 }
