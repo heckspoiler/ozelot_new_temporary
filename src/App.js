@@ -28,8 +28,8 @@ function AppContent() {
   return (
     <div className="App">
       <header className="App-header"></header>
-
-      <Scene />
+      {/* 
+      <Scene /> */}
       <BlurOverlay hoveredItem />
 
       {isSplashscreen ? (
@@ -42,13 +42,15 @@ function AppContent() {
         <section
           className={`${styles.main} ${showMain && styles.sectionVisible}`}
         >
-          <UpperContainer />
-          <MiddleInformation
-            hoveredItem={hoveredItem}
-            setHoveredItem={setHoveredItem}
-          />
-          <HoverText hoveredItem={hoveredItem} />
-          <BrandMarquee />
+          <section className={styles.contentContainer}>
+            <UpperContainer />
+            <MiddleInformation
+              hoveredItem={hoveredItem}
+              setHoveredItem={setHoveredItem}
+            />
+            <HoverText hoveredItem={hoveredItem} />
+            <BrandMarquee />
+          </section>
           <Footer />
         </section>
       )}

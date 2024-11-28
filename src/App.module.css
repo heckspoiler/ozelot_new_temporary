@@ -4,14 +4,14 @@
     width: 100svw;
     pointer-events: none;
     z-index: 0;
-    padding: 2rem 4rem;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    justify-content: space-between;
     opacity: 0;
     transition: opacity 0.5s ease-in;
     transform: translateY(10vh), translateX(20vw);
+    gap: 2rem;
 }
 
 .sectionVisible {
@@ -22,30 +22,39 @@
     pointer-events: all;
 }
 
+.contentContainer {
+    padding: 1rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
 /* Staggered children animations */
-.sectionVisible>* {
+.sectionVisible>*,
+.contentContainer>* {
     opacity: 0;
     transform: translateY(0), translateX(0);
     animation: fadeInUp 0.8s ease-out forwards;
 }
 
-.sectionVisible>*:nth-child(1) {
+.contentContainer>*:nth-child(1) {
     animation-delay: 0.2s;
 }
 
-.sectionVisible>*:nth-child(2) {
+.contentContainer>*:nth-child(2) {
     animation-delay: 0.4s;
 }
 
-.sectionVisible>*:nth-child(3) {
+.contentContainer>*:nth-child(3) {
     animation-delay: 0.6s;
 }
 
-.sectionVisible>*:nth-child(4) {
+.contentContainer>*:nth-child(4) {
     animation-delay: 0.8s;
 }
 
-.sectionVisible>*:nth-child(5) {
+.sectionVisible>*:nth-child(2) {
     animation-delay: 1s;
 }
 
@@ -71,21 +80,23 @@
 /* Mobile */
 @media (max-width: 840px) {
     .main {
-        padding: 0rem 1rem 4rem 1rem;
+        padding: 0;
         gap: 3%;
-        justify-content: space-evenly;
+        justify-content: space-between;
+    }
+
+    .contentContainer {
+        padding: 0.5rem 1rem 0 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
     }
 
     .main * {
         pointer-events: all;
     }
 
-    /* Staggered children animations */
-    .sectionVisible>* {
-        opacity: 0;
-        transform: translateY(0), translateX(0);
-        animation: fadeInUp 0.6s ease-out forwards;
-    }
 
 
 }
@@ -93,9 +104,9 @@
 /* Tablet and Smaller Desktop */
 @media (min-width: 841px) and (max-width: 1120px) {
     .main {
-        padding: 0rem 1rem 4rem 1rem;
+        padding: 0;
         gap: 0;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .main * {

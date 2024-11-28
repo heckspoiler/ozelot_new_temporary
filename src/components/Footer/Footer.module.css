@@ -1,15 +1,11 @@
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    position: relative;
     width: 100vw;
     border-top: 1px solid var(--black);
-    padding: 0.5rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
-
 }
 
 .logoContainer,
@@ -65,14 +61,15 @@
 /* Mobile */
 @media (max-width: 768px) {
     .footer {
-        position: fixed;
-
-        width: 100%;
+        position: relative;
+        width: 100vw;
         border-top: 1px solid var(--black);
-        padding: 0.25rem 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: white;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+
     }
 
     .logoContainer,
@@ -104,18 +101,11 @@
     }
 
     .socialsContainer {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        justify-content: right;
-    }
-
-    .socialsContainer a {
-        display: flex;
+        gap: 0.75rem;
     }
 
     .socialsContainer a img {
-        height: 1rem;
+        height: 0.8rem;
     }
 
 }

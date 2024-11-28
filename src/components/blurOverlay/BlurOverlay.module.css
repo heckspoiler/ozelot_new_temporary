@@ -12,17 +12,3 @@
 .isHovered {
     backdrop-filter: blur(2px)
 }
-
-/* @keyframes blurHide {
-    0% {
-        backdrop-filter: blur(10px);
-    }
-
-    50% {
-        backdrop-filter: blur(0px);
-    }
-
-    100% {
-        backdrop-filter: blur(10px);
-    }
-} */
