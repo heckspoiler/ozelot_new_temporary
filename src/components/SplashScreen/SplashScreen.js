@@ -4,7 +4,6 @@ import styles from './SplashScreen.module.css';
 
 import soundcloud from '../../images/svg/socials/soundcloud.svg';
 import insta from '../../images/svg/socials/insta.svg';
-import spotify from '../../images/svg/socials/spotify.svg';
 import bandcamp from '../../images/svg/socials/bandcamp.svg';
 
 import Logo from './Logo/Logo';
@@ -29,8 +28,8 @@ export default function SplashScreen({ setIsSplashscreen }) {
           We are expanding our creative horizons and reshaping our approach to
           meet the evolving demands of the future. Our mission is to push
           boundaries at the intersection of technology and creativity. We're
-          investing in cutting-edge technologies and a “the physical” to deliver
-          exceptional experiences.
+          investing in cutting-edge technologies and experiences for the digital
+          and physical world.
         </p>
 
         <div className={styles.socialsContainer}>

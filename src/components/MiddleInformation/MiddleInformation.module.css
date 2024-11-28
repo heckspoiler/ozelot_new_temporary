@@ -28,11 +28,10 @@
 
 .titleContainer {
     height: fit-content;
+    text-align: center;
 }
 
-.titleContainer h2 {
-    font-family: var(--title-font);
-}
+
 
 .lottieContainer {
     height: 100%;
@@ -130,9 +129,7 @@
         height: fit-content;
     }
 
-    .titleContainer h2 {
-        font-family: var(--title-font);
-    }
+
 
     .lottieContainer {
         height: 100%;

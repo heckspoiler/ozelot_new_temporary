@@ -43,7 +43,6 @@
 }
 
 .textContainer p {
-    font-size: 0.9rem;
     width: 90%;
 }
 
@@ -53,9 +52,7 @@
     flex-direction: column;
 }
 
-.socialsContainer h4 {
-    font-family: var(--medium-font)
-}
+.socialsContainer h4 {}
 
 .socialIcons {
     display: flex;

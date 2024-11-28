@@ -1,3 +1,10 @@
+@import url("https://use.typekit.net/pam7rpk.css");
+
+
+
+
+
+
 @font-face {
   font-family: "Nohemi Bold";
   src: url("./fonts/Nohemi-Bold.woff2");
@@ -18,9 +25,10 @@
   src: url("./fonts/Nohemi-Medium.woff2");
 }
 
+
 :root {
   --title-font: "Nohemi Bold";
-  --text-font: "Nohemi Regular";
+  --text-font: "neue-haas-grotesk-display";
   --thin-font: "Nohemi Thin";
   --medium-font: "Nohemi Medium";
   --black: rgb(35, 35, 35);
@@ -51,15 +59,23 @@ body {
   background-color: transparent;
 }
 
-h1,
-h2 {
-  font-family: var(--title-font);
+h1 {
+  font-family: var(--text-font);
+  font-weight: 700;
+
 }
 
+h2,
 h3,
 h4,
 h5 {
-  font-family: var(--medium-font);
+  font-family: var(--text-font);
+  font-weight: 400;
+
+}
+
+h2 {
+  font-size: clamp(1rem, 2.5vw, 2rem);
 }
 
 ul,
@@ -73,6 +89,7 @@ li,
 ul {
   font-family: var(--text-font);
   line-height: 1.5;
+  font-size: clamp(1rem, 1.3vw, 2rem);
 }
 
 h1 {
@@ -122,22 +139,11 @@ button:hover {
     text-transform: uppercase;
   }
 
-  h2 {
-    font-size: 1rem;
-  }
 
-  p {
-    font-size: calc(0.5rem + 0.4vh);
-  }
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 768px) and (max-width: 1120px) {
-
-  p {
-    font-size: calc(0.7rem + 0.4vh);
-  }
-}
+@media (min-width: 768px) and (max-width: 1120px) {}
 
 
 
