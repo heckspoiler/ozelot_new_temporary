@@ -89,7 +89,7 @@ li,
 ul {
   font-family: var(--text-font);
   line-height: 1.5;
-  font-size: clamp(1rem, 1.3vw, 2rem);
+  font-size: clamp(1rem, 1.3vw, 4rem);
 }
 
 h1 {
