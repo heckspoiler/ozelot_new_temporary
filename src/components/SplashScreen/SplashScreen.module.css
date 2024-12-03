@@ -4,8 +4,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 20;
-    height: 80svh;
-    width: 80svw;
+    height: 70svh;
+    width: 70svw;
     background-color: white;
     border: 1px solid var(--black);
     padding: 2rem;

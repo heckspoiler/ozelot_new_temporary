@@ -25,7 +25,7 @@
 /* Mobile */
 @media (max-width: 840px) {
     .container {
-        transform: translateY(calc(-2vh - 0.5rem));
+        transform: translateY(calc(-1vh - 0.5rem));
     }
 
     .container a {

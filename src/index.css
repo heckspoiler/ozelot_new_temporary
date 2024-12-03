@@ -154,6 +154,12 @@ button:hover {
 /* Tablet and Smaller Desktop */
 @media (min-width: 768px) and (max-width: 1120px) {}
 
+@media (min-width: 1840px) {
+  p {
+    font-size: clamp(2rem, 2vh, 4rem);
+  }
+}
+
 
 
 @media not all and (min-resolution:.001dpcm) {
