@@ -1,5 +1,5 @@
 .textContainer {
-    min-height: 10rem;
+    min-height: 8rem;
     display: flex;
     align-items: center;
 }
@@ -15,7 +15,6 @@
     .textContainer {
         width: fit-content;
         max-width: 100%;
-
     }
 
 }

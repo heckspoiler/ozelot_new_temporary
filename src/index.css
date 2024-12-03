@@ -89,7 +89,7 @@ li,
 ul {
   font-family: var(--text-font);
   line-height: 1.5;
-  font-size: clamp(1rem, 1.3vw, 4rem);
+  font-size: clamp(1rem, 1.1vw, 4rem);
 }
 
 h1 {
@@ -137,6 +137,15 @@ button:hover {
   h1 {
     font-size: 2rem;
     text-transform: uppercase;
+  }
+
+  p,
+  a,
+  li,
+  ul {
+    font-family: var(--text-font);
+    line-height: 1.5;
+    font-size: clamp(0.9rem, 0.8vw, 2rem);
   }
 
 

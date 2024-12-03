@@ -23,7 +23,11 @@
 
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 840px) {
+    .container {
+        transform: translateY(calc(-2vh - 0.5rem));
+    }
+
     .container a {
         gap: 0.5rem;
     }

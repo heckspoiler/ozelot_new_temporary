@@ -81,7 +81,7 @@
 @media (max-width: 840px) {
     .main {
         padding: 0;
-        gap: 2rem;
+        gap: 1rem;
         justify-content: space-between;
     }
 
